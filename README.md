@@ -42,13 +42,6 @@ JavaScript: Logic for password generation, saving, deleting, and downloading pas
 Contributing
 Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository and submit a pull request. You can also open issues for bugs or feature requests.
 
-Steps to Contribute:
-Fork the repository.
-Clone your forked repo to your local machine.
-Create a new branch (git checkout -b feature-branch).
-Make your changes and commit them (git commit -am 'Add feature').
-Push to the branch (git push origin feature-branch).
-Create a pull request.
 License
 This project is open-source and available under the MIT License.
 
