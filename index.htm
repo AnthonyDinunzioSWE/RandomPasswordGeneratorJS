@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="tabs">
+            <button class="tab-btn active" id="generate-tab">Generate Password</button>
+            <button class="tab-btn" id="saved-passwords-tab">Saved Passwords</button>
+        </div>
+
+        <!-- Password Generation Section -->
+        <div id="generate-section" class="tab-content active">
+            <form id="password-form">
+                <div class="input-group">
+                    <label for="lowercase">
+                        Lowercase
+                        <input type="checkbox" id="lowercase" name="characterType" value="lowercase">
+                        <span class="custom-checkbox">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path d="M9 19l-7-7 1.41-1.41L9 16.17l11.59-11.59L22 6l-13 13z"></path>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="uppercase">
+                        Uppercase
+                        <input type="checkbox" id="uppercase" name="characterType" value="uppercase">
+                        <span class="custom-checkbox">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path d="M9 19l-7-7 1.41-1.41L9 16.17l11.59-11.59L22 6l-13 13z"></path>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="numbers">
+                        Numbers
+                        <input type="checkbox" id="numbers" name="characterType" value="numbers">
+                        <span class="custom-checkbox">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path d="M9 19l-7-7 1.41-1.41L9 16.17l11.59-11.59L22 6l-13 13z"></path>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="symbols">
+                        Symbols
+                        <input type="checkbox" id="symbols" name="characterType" value="symbols">
+                        <span class="custom-checkbox">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path d="M9 19l-7-7 1.41-1.41L9 16.17l11.59-11.59L22 6l-13 13z"></path>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="length">Password Length</label>
+                    <div class="number-input-container">
+                        <input type="number" id="length" value="12" min="1" max="128" step="1" class="number-input">
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button type="submit" id="generate-btn">Generate Password</button>
+                    <button type="button" id="reset-btn" class="reset-btn">Reset</button>
+                </div>
+            </form>
+
+            <div class="output">
+                <h3>Generated Password</h3>
+                <div id="output-password" class="password-output">No password generated yet.</div>
+                <button id="save-btn" class="save-btn" disabled>Save Password</button>
+            </div>
+        </div>
+
+        <!-- Saved Passwords Section -->
+        <div id="saved-passwords-section" class="tab-content">
+            <h3>Saved Passwords</h3>
+            <ul id="password-list">
+                <li>No passwords saved yet.</li>
+            </ul>
+            <button id="download-btn" class="download-btn" disabled>Download All Passwords</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
