@@ -1,3 +1,5 @@
+APP PREIVIEW: https://anthonydinunzioswe.github.io/RandomPasswordGeneratorJS
+
 Password Generator
 A simple, customizable password generator built with HTML, CSS, and JavaScript. This tool allows users to generate secure passwords by selecting various character types (lowercase, uppercase, numbers, symbols) and password length. Users can also save, delete, and download their generated passwords for future use.
 
